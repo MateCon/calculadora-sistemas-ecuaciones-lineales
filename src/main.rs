@@ -1,6 +1,17 @@
 use core::fmt;
 use std::io::{self, Write};
 
+/* Ej
+ * Input:
+ * 2
+ * 3
+ * 1 2 3
+ * 2 3 1
+ * Output:
+ * 1   2|  3 
+ * 0 0.5|2.5
+ */
+
 fn main() {
     let mut matrix = Matrix {
         i: usize_input("Ingrese la cantidad de filas de la matriz (i): "), 
